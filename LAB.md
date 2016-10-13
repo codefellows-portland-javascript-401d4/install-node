@@ -24,14 +24,14 @@ global packages. You will need curl, python v2.x a C compiler(gcc or clang) and 
 These can be obtained through whatever package manager your operating system uses (homebrew on Mac, apt-get on Ubuntu, etc).
 
 ```sh
-curl -O https://nodejs.org/dist/latest/node-v6.1.0.tar.gz
-tar -vxzf node-v6.1.0.tar.gz
-cd node-v6.1.0
+curl -O https://nodejs.org/dist/latest/node-v6.8.0.tar.gz
+tar -vxzf node-v6.8.0.tar.gz
+cd node-v6.8.0
 ./configure --prefix=$HOME/.node
 make && make install
 ```
 
-These commands will download the latest stable version of node (currently 6.1.0) configure it to install into a .node folder in your 
+These commands will download the latest stable version of node (currently 6.8.0) configure it to install into a .node folder in your 
 home directory and will then compile it from source. Next you need to tell your shell to look for the node command in $HOME/.node/bin   
 
 On Linux:
@@ -50,7 +50,7 @@ echo "export NODE_PATH=$HOME/.node/lib/node_modules" >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
-If you now enter the command `node --version` you should see `v6.1.0` (or newer)
+If you now enter the command `node --version` you should see `v6.8.0` (or newer)
 
 ## How code labs will be sumbitted
 
@@ -73,6 +73,8 @@ in the repo of the original Assignment. Then submit the url of your pull request
 
 Some labs may be follow-on assignments and will allow you to use the same repository for subsequent labs. When this is the
 case, you will see sequentially labelled `LAB.md`, `LAB1.md` files that describe each lab.
+
+__You will also need to include a travis.yml file__, but we haven't covered `npm` and testing yet. So for now, it's not required.
 
 ### Submit a pull request with a hello world program
 
