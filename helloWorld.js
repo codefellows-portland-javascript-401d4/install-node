@@ -1,2 +1,2 @@
 console.log('Node has run Hello World');
-Console.log('Name: Albert Reel');
+console.log('Name: Albert Reel');
